@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"devman/utils"
+)
 
 func divide(a, b int) (int, error) {
 	if b == 0 {
@@ -31,4 +34,5 @@ func main() {
 	}
 	fmt.Println("Result:", result2)
 	
+	utils.GetMellons()
 }
