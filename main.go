@@ -9,6 +9,12 @@ func divide(a, b int) (int, error) {
 	return a / b, nil
 }
 
+
+func multiply(a, b int) (int, error) {
+	return a * b, nil
+}
+
+
 func main() {
 	result, err := divide(10, 2)
 	if err != nil {
@@ -16,4 +22,13 @@ func main() {
 		return
 	}
 	fmt.Println("Result:", result)
+
+
+	result2, err := multiply(10, 2)
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+	fmt.Println("Result:", result2)
+	
 }
